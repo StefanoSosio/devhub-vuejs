@@ -36,7 +36,7 @@ Prima di iniziare, assicurati di avere installato:
 
 1. Clona il repository:
 ```bash
-git clone <url-del-repository>
+git clone https://github.com/StefanoSosio/devhub-vuejs
 cd devhub-vuejs
 ```
 
