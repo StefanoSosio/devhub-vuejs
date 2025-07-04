@@ -2,7 +2,7 @@
 defineProps({
   msg: {
     type: String,
-    default: 'Benvenuto nella tua applicazione Vue.js!'
+    default: 'Messaggio di DEFAULT'
   },
   index: {
     type: String,

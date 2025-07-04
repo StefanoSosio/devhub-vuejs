@@ -14,6 +14,26 @@ const router = createRouter({
       name: 'test',
       component: () => import('../views/TestView.vue'),
     },
+    {
+      path: '/direttive',
+      name: 'direttive',
+      component: () => import('../views/DirettiveView.vue'),
+    },
+    {
+      path: '/lifecycle',
+      name: 'lifecycle',
+      component: () => import('../views/LifecycleView.vue'),
+    },
+    {
+      path: '/http',
+      name: 'http',
+      component: () => import('../views/HttpView.vue'),
+    },
+    {
+      path: '/pinia',
+      name: 'pinia',
+      component: () => import('../views/PiniaView.vue'),
+    },
   ],
 })
 
