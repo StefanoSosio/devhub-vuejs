@@ -30,7 +30,7 @@ watch(
   }
 )
 
-function showAlert(index) {
+function showAlertFunction(index) {
   alert('Ricevuto alert da MsgComponent numero ' + index)
 }
 </script>
@@ -54,22 +54,22 @@ function showAlert(index) {
 
   <MsgComponent
     index="1"
-    @showAlert="showAlert"
+    @showAlert="showAlertFunction"
   />
   <MsgComponent
     index="2"
     msg="Messaggio di test"
-    @showAlert="showAlert"
+    @showAlert="showAlertFunction"
   />
   <MsgComponent
     index="3"
     :msg="text"
-    @showAlert="showAlert"
+    @showAlert="showAlertFunction"
   />
   <MsgComponent
     index="4"
     :msg="state.msg"
-    @showAlert="showAlert"
+    @showAlert="showAlertFunction"
   />
 
   <h1 style="margin-top: 80px">COMPUTED PROPERTIES</h1>
