@@ -56,7 +56,7 @@ function handleClick() {
     </button>
     <p v-if="flag">Flag impostato a TRUE</p>
     <p v-else>Flag impostato a FALSE</p>
-    <p v-show="flag">Testo visibile</p>
+    <p v-show="flag">V-SHOW: Testo visibile</p>
 
     <h1 style="margin-top: 80px">V-MODEL</h1>
     <input v-model="inputValue" />
@@ -81,9 +81,11 @@ function handleClick() {
 
     <h1 style="margin-top: 80px">V-TEXT</h1>
     <p v-text="text"></p>
+    <p>{{ text }}</p> <!-- Consente interpolazione -->
 
     <h1 style="margin-top: 80px">V-ONCE</h1>
-    <p v-once>{{ text }}</p>
+    <p v-once>{{ 'V-ONCE Valore di text:  ' + text }}</p>
+    <p>{{ 'Valore di text: ' + text }}</p>
     <button @click="text = 'Nuova stringa'">
       Change text
     </button>

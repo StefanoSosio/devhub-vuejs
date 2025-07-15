@@ -1,5 +1,5 @@
 <script setup>
-defineProps({
+const props = defineProps({
   msg: {
     type: String,
     default: 'Messaggio di DEFAULT'
@@ -16,10 +16,10 @@ const emit = defineEmits(['showAlert'])
 <template>
   <div class="msg-component">
     <p class="text">
-      {{ msg }}
+      {{ props.msg }}
     </p>
-    <button @click="emit('showAlert', index)">
-      {{ 'Mostra alert: ' + index }}
+    <button @click="emit('showAlert', props.index)">
+      {{ 'Mostra alert: ' + props.index }}
     </button>
   </div>
 </template>
